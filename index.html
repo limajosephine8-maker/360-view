@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My 360 View</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.js"></script>
+    <style>
+        #panorama { width: 100%; height: 500px; }
+    </style>
+</head>
+<body>
+    <div id="panorama"></div>
+    <script>
+    pannellum.viewer('panorama', {
+        "type": "equirectangular",
+        "panorama": "mirjanfort.png",
+        "autoLoad": true
+    });
+    </script>
+</body>
+</html>
